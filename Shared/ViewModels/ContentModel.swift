@@ -12,7 +12,7 @@ class ContentModel: ObservableObject {
     
     @Published var modules = [Module]()
         
-    
+    var styleData: Data?
     
     init() {
         
@@ -39,7 +39,24 @@ class ContentModel: ObservableObject {
         
         catch {
             
-            print("Error")
+            print("Error in data")
+            
+        }
+        
+        let styleUrl = Bundle.main.url(forResource: "style", withExtension: "html")
+        
+        do {
+            
+            let styleData = try Data(contentsOf: styleUrl!)
+            
+            self.styleData = styleData
+            
+        }
+        
+        
+        catch {
+            
+            print("Error in style")
             
         }
     
