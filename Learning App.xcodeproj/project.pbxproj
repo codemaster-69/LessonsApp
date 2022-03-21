@@ -20,6 +20,10 @@
 		0926BC4027D25B1F00A9F755 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 0926BC3F27D25B1F00A9F755 /* style.html */; };
 		0926BC4227D3890E00A9F755 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926BC4127D3890E00A9F755 /* Models.swift */; };
 		0926BC4427D3963A00A9F755 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926BC4327D3963A00A9F755 /* HomeViewRow.swift */; };
+		0926BC4627D39C1400A9F755 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926BC4527D39C1400A9F755 /* ContentView.swift */; };
+		0926BC6C27E3341500A9F755 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926BC6B27E3341500A9F755 /* ContentViewRow.swift */; };
+		0926BC6E27E3378200A9F755 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926BC6D27E3378200A9F755 /* ContentDetailView.swift */; };
+		09C3650727E8FD2E006FA7E7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C3650627E8FD2E006FA7E7 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		0926BC3F27D25B1F00A9F755 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		0926BC4127D3890E00A9F755 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0926BC4327D3963A00A9F755 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		0926BC4527D39C1400A9F755 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0926BC6B27E3341500A9F755 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		0926BC6D27E3378200A9F755 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		09C3650627E8FD2E006FA7E7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C3650727E8FD2E006FA7E7 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 				0912DB1E27C2468F0079D38A /* Shared */,
 				0912DB2D27C246940079D38A /* macOS */,
 				0912DB2727C246930079D38A /* Products */,
+				09C3650527E8FD2E006FA7E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,9 @@
 			children = (
 				0912DB2027C2468F0079D38A /* HomeView.swift */,
 				0926BC4327D3963A00A9F755 /* HomeViewRow.swift */,
+				0926BC4527D39C1400A9F755 /* ContentView.swift */,
+				0926BC6B27E3341500A9F755 /* ContentViewRow.swift */,
+				0926BC6D27E3378200A9F755 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +148,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		09C3650527E8FD2E006FA7E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C3650627E8FD2E006FA7E7 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +260,11 @@
 			files = (
 				0912DB3127C246940079D38A /* HomeView.swift in Sources */,
 				0926BC3627D237CE00A9F755 /* ContentModel.swift in Sources */,
+				0926BC4627D39C1400A9F755 /* ContentView.swift in Sources */,
 				0912DBBB27C562B10079D38A /* Profile.swift in Sources */,
+				0926BC6E27E3378200A9F755 /* ContentDetailView.swift in Sources */,
 				0912DB2F27C246940079D38A /* LearningApp.swift in Sources */,
+				0926BC6C27E3341500A9F755 /* ContentViewRow.swift in Sources */,
 				0926BC4427D3963A00A9F755 /* HomeViewRow.swift in Sources */,
 				0926BC4227D3890E00A9F755 /* Models.swift in Sources */,
 			);

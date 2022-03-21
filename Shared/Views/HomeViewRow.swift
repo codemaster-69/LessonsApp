@@ -1,8 +1,8 @@
 //
 //  HomeViewRow.swift
-//  Learning App (iOS)
+//  LearningApp
 //
-//  Created by Fredrik Raknes Lillejord on 05/03/2022.
+//  Created by Christopher Ching on 2021-03-11.
 //
 
 import SwiftUI
@@ -16,7 +16,6 @@ struct HomeViewRow: View {
     var time: String
     
     var body: some View {
-       
         
         ZStack {
             
@@ -25,64 +24,63 @@ struct HomeViewRow: View {
                 .cornerRadius(10)
                 .shadow(radius: 5)
                 .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
-            
+                
             
             HStack {
                 
-                
+                // Image
                 Image(image)
                     .resizable()
-                    .frame(width: 116, height: 116, alignment: .center)
+                    .frame(width: 116, height: 116)
                     .clipShape(Circle())
-              
+                
                 Spacer()
                 
-                VStack (alignment: .leading, spacing: 10){
-                
+                // Text
+                VStack (alignment: .leading, spacing: 10) {
+                    
+                    // Headline
                     Text(title)
                         .bold()
                     
+                    // Description
                     Text(description)
-                        .padding(.bottom, 20.0)
+                        .padding(.bottom, 20)
                         .font(.caption)
-                        
                     
+                    // Icons
                     HStack {
                         
+                        // Number of lessons/questions
                         Image(systemName: "text.book.closed")
                             .resizable()
-                            .frame(width: 15, height: 15, alignment: .center)
+                            .frame(width: 15, height: 15)
                         Text(count)
-                            .font(.caption)
+                            .font(Font.system(size: 10))
+                        
                         Spacer()
                         
+                        // Time
                         Image(systemName: "clock")
                             .resizable()
-                            .frame(width: 15, height: 15, alignment: .center)
+                            .frame(width: 15, height: 15)
                         Text(time)
                             .font(Font.system(size: 10))
                         
-                        
                     }
-                    
-                    
                 }
-                .padding(.leading, 20.0)
-                
-                
+                .padding(.leading, 20)
             }
-            .padding(.horizontal, 20.0)
-            
+            .padding(.horizontal, 20)
             
         }
         
-        .padding()
         
     }
 }
 
 struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description", count: "10 Lessons", time: "2 hours")
+        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description", count: "10 Lessons", time: "2 Hours")
     }
 }

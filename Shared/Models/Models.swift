@@ -1,8 +1,8 @@
 //
 //  Models.swift
-//  Learning App (iOS)
+//  LearningApp
 //
-//  Created by Fredrik Raknes Lillejord on 05/03/2022.
+//  Created by Christopher Ching on 2021-03-04.
 //
 
 import Foundation
@@ -13,8 +13,6 @@ struct Module: Decodable, Identifiable {
     var category: String
     var content: Content
     var test: Test
-    
-    
 }
 
 struct Content: Decodable, Identifiable {
@@ -52,5 +50,4 @@ struct Question: Decodable, Identifiable {
     var content: String
     var correctIndex: Int
     var answers: [String]
-    
 }

@@ -1,8 +1,8 @@
 //
-//  Learning_AppApp.swift
-//  Shared
+//  LearningAppApp.swift
+//  LearningApp
 //
-//  Created by Fredrik Raknes Lillejord on 20/02/2022.
+//  Created by Christopher Ching on 2021-03-03.
 //
 
 import SwiftUI
